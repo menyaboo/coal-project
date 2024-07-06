@@ -1,11 +1,12 @@
+import {FC} from "react";
+import HeaderComponent from "./components/header";
+import MainPage from "./pages/main";
 
-function App() {
+const App: FC = () => (
+  <>
+    <HeaderComponent/>
+    <MainPage/>
+  </>
+);
 
-  return (
-      <h1 className="text-3xl font-bold underline">
-          Hello world!
-      </h1>
-  )
-}
-
-export default App
+export default App;
