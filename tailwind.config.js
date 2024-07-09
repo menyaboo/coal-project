@@ -19,6 +19,7 @@ export default {
       },
       gridTemplateColumns: {
         'auto-fit-350': 'repeat(auto-fit, minmax(350px, 1fr))',
+        'auto-fit-250': 'repeat(auto-fit, minmax(250px, 1fr))',
       },
       colors: {
         primary: "#58A0A3",
