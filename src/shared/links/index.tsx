@@ -1,6 +1,6 @@
-import {ISocialLinks} from "../../interfaces/links";
 import {PiTelegramLogo} from "react-icons/pi";
 import {FaWhatsapp} from "react-icons/fa";
+import {ISocialLinks} from "@/interfaces/links";
 
 const socialLinks: ISocialLinks[] = [
   {
