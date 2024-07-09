@@ -8,9 +8,9 @@ const useHideState = () => {
     const handleResize = () => {
       const currentWidth = window.innerWidth;
       if (currentWidth <= 767 && prevWidth > 767) {
-        setHide(false);
-      } else if (currentWidth > 767 && prevWidth <= 767) {
         setHide(true);
+      } else if (currentWidth > 767 && prevWidth <= 767) {
+        setHide(false);
       }
       setPrevWidth(currentWidth);
     };
