@@ -1,11 +1,11 @@
 import {FC, HTMLAttributes, ReactNode} from "react";
 
 interface IContainerComponentProps extends HTMLAttributes<HTMLDivElement> {
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 const ContainerComponent: FC<IContainerComponentProps> = ({children, className = '', ...props}) => (
-  <div className={`md:mx-14 mx-2 ${className}`} {...props}>
+  <div className={`container ${className}`} {...props}>
     {children}
   </div>
 );

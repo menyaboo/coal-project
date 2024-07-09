@@ -6,6 +6,17 @@ export default {
   ],
   theme: {
     extend: {
+      container: {
+        center: true, // Center the container by default
+        padding: '2rem', // Default padding
+        screens: {
+          sm: '100%', // 100% width on small screens
+          md: '728px', // 728px width on medium screens
+          lg: '984px', // 984px width on large screens
+          xl: '1240px', // 1240px width on extra large screens
+          "2xl": '1620px',
+        },
+      },
       gridTemplateColumns: {
         'auto-fit-350': 'repeat(auto-fit, minmax(350px, 1fr))',
       },
