@@ -3,7 +3,7 @@ import ContainerComponent from "../container";
 import {socialLinks} from "../../shared/links";
 
 const HeaderComponent: FC<HTMLAttributes<HTMLElement>> = ({className = '', ...props}) => (
-  <header className={`flex bg-gray-700 py-3 w-full text-white ${className}`} {...props}>
+  <header className={`fixed z-10 bg-[rgba(0,0,0,0.8)] py-6 w-full text-white ${className}`} {...props}>
     <ContainerComponent className="grid items-center grid-cols-auto-fit-350 gap-3 w-full">
       <div>
         <h5 className="uppercase font-bold">Доставка угля</h5>
