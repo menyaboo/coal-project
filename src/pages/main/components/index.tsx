@@ -1,9 +1,9 @@
 import {FC} from "react";
-import ContainerComponent from "../../../components/container";
-import {qualityList} from "../../../shared/quality";
+import {qualityList} from "@/shared/quality";
+import ContainerComponent from "@/components/container";
 
 const MainPicture: FC = () => (
-  <div className="h-dvh min-h-[980px] bg-cover" style={{backgroundImage: 'url("ugolek.jpg")'}}>
+  <div className="h-dvh min-h-[620px] bg-cover" style={{backgroundImage: 'url("ugolek.jpg")'}}>
     <div className='bg-[rgba(0,0,0,0.4)] text-white flex items-center w-full h-full'>
       <ContainerComponent className="flex flex-col gap-16">
         <div>
