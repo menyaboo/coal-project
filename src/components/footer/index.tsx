@@ -3,9 +3,15 @@ import ContainerComponent from "@/components/container";
 
 const FooterComponent: FC = () => (
   <footer className="py-6 text-white bg-gray-700 mt-6">
-    <ContainerComponent className="flex justify-between items-center">
-      <h1>Подвал</h1>
-      <b>Какая либо информация</b>
+    <ContainerComponent className="flex flex-col gap-3">
+      <b>Предложение не является публичной оффертой</b>
+      <p className="text-[12px]">
+        Обращаем ваше внимание на то, что данный интернет-сайт,
+        а также вся информация о товарах, предоставленная на нём,
+        носит исключительно информационный характер и ни при каких
+        условиях не является публичной офертой, определяемой
+        положениями Статьи 437 Гражданского кодекса Российской Федерации.
+      </p>
     </ContainerComponent>
   </footer>
 );

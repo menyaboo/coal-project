@@ -1,5 +1,5 @@
 import {FC} from "react"
-import {socialLinks} from "@/shared/links";
+import {socialLinks} from "@/shared/data";
 
 const TitleHeader: FC<{hide: boolean}> = ({hide}) => (
   <>
@@ -10,7 +10,7 @@ const TitleHeader: FC<{hide: boolean}> = ({hide}) => (
           <div className="flex gap-3">
             {
               socialLinks.map(({name, url, svg}, index) => (
-                <a href={url} key={index} className="flex items-center gap-1 cursor-pointer">
+                <a href={url} key={index} className="flex items-center gap-1 cursor-pointer hover:opacity-70 transition">
                   {svg}
                   <span>{name}</span>
                 </a>
