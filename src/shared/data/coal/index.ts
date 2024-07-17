@@ -2,7 +2,7 @@ import {ICoalList} from "@/interfaces/data";
 
 const coalList: ICoalList[] = [
   {
-    title: "Уголь марки ДО",
+    title: "Уголь марки ДР",
     image: "coal1.png",
     description: [
       "Влажность предельная до 18%",
