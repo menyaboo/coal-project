@@ -5,7 +5,7 @@ import {ISocialLinks, ITelephoneLinks} from "src/interfaces/data";
 const socialLinks: ISocialLinks[] = [
   {
     name: "Telegram",
-    url: "https://t.me/79095100873",
+    url: "https://t.me/Roman_Amerkhanov",
     svg: <PiTelegramLogo className="text-blue-300 size-5"/>,
   },
   {
