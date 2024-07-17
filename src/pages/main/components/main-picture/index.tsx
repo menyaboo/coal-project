@@ -6,12 +6,9 @@ const MainPicture: FC = () => (
   <div className="h-dvh min-h-[620px] bg-cover" style={{backgroundImage: 'url("ugolek.jpg")'}}>
     <div className='bg-[rgba(0,0,0,0.4)] text-white flex items-center w-full h-full'>
       <ContainerComponent className="flex flex-col gap-16">
+        <h2 className="break-words text-3xl md:text-5xl">Предоставляем высококачественный <b>уголь</b></h2>
         <div>
-          <h1 className="font-bold text-8xl pb-3">УГОЛЬ</h1>
-          <p className="text-3xl">Предоставляем высококачественный уголь</p>
-        </div>
-        <div>
-          <h2 className="font-bold pb-0">Наши преимущества:</h2>
+          <h4 className="font-bold pb-0">Наши преимущества:</h4>
           <ul className="text-[1.2rem]">
             {
               qualityList.map(({title, svg}, index) => (

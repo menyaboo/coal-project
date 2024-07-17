@@ -4,7 +4,7 @@ import {coalList} from "@/shared/data";
 
 const ProductionList: FC = () => (
   <ContainerComponent className="py-6">
-    <h1>Наша продукция</h1>
+    <h1 className="text-3xl md:text-5xl">Наша продукция</h1>
 
     <div className="grid grid-cols-auto-fit-250 text-white gap-6 pt-6">
       {
