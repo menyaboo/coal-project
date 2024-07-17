@@ -10,7 +10,7 @@ const TitleHeader: FC<{hide: boolean}> = ({hide}) => (
           <div className="flex gap-3">
             {
               socialLinks.map(({name, url, svg}, index) => (
-                <a href={url} key={index} className="flex items-center gap-1 hover:opacity-70 transition">
+                <a href={url} target="_blank" key={index} className="flex items-center gap-1 hover:opacity-70 transition">
                   {svg}
                   <span>{name}</span>
                 </a>
@@ -23,7 +23,7 @@ const TitleHeader: FC<{hide: boolean}> = ({hide}) => (
           <b>Или позвоните нам по номеру телефона:</b>
           <div className="flex gap-3">
             {telephoneLinks.map(({href, telephone}) =>
-                <a className="hover:opacity-70 transition" href={href}>{telephone}</a>)}
+                <a href={href} target="_blank" className="hover:opacity-70 transition">{telephone}</a>)}
           </div>
         </div>
       </div>
