@@ -1,5 +1,5 @@
 import {FC} from "react"
-import {socialLinks} from "@/shared/data";
+import {socialLinks, telephoneLinks} from "@/shared/data";
 
 const TitleHeader: FC<{hide: boolean}> = ({hide}) => (
   <>
@@ -10,7 +10,7 @@ const TitleHeader: FC<{hide: boolean}> = ({hide}) => (
           <div className="flex gap-3">
             {
               socialLinks.map(({name, url, svg}, index) => (
-                <a href={url} key={index} className="flex items-center gap-1 cursor-pointer hover:opacity-70 transition">
+                <a href={url} key={index} className="flex items-center gap-1 hover:opacity-70 transition">
                   {svg}
                   <span>{name}</span>
                 </a>
@@ -22,8 +22,8 @@ const TitleHeader: FC<{hide: boolean}> = ({hide}) => (
         <div>
           <b>Или позвоните нам по номеру телефона:</b>
           <div className="flex gap-3">
-            <span>+7 909 510-08-73</span>
-            <span>+7 913 510-08-73</span>
+            {telephoneLinks.map(({href, telephone}) =>
+                <a className="hover:opacity-70 transition" href={href}>{telephone}</a>)}
           </div>
         </div>
       </div>

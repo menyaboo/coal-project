@@ -3,10 +3,16 @@ import {ReactNode} from "react";
 interface ISocialLinks {
   name: string;
   url: string;
-  svg: ReactNode,
+  svg: ReactNode;
+}
+
+interface ITelephoneLinks {
+  telephone: string;
+  href: string;
 }
 
 
 export type {
-  ISocialLinks
+  ISocialLinks,
+  ITelephoneLinks
 }
